@@ -7,8 +7,6 @@ import net.corda.core.flows.InitiatingFlow;
 import net.corda.core.flows.StartableByRPC;
 import net.corda.core.utilities.ProgressTracker;
 import co.paralleluniverse.fibers.Suspendable;
-import com.google.common.collect.ImmutableList;
-import com.google.common.collect.ImmutableSet;
 import net.corda.core.contracts.Command;
 import net.corda.core.contracts.ContractState;
 import net.corda.core.contracts.UniqueIdentifier;
@@ -20,6 +18,9 @@ import net.corda.core.transactions.TransactionBuilder;
 import net.corda.core.utilities.ProgressTracker;
 import net.corda.core.utilities.ProgressTracker.Step;
 import java.util.Date;
+import com.example.states.FundTrackingState;
+import com.example.contract.TemplateContract;
+import net.corda.core.contracts.Command;
 // ******************
 // * Initiator flow *
 // ******************
