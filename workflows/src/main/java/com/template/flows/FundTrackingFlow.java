@@ -18,8 +18,8 @@ import net.corda.core.transactions.TransactionBuilder;
 import net.corda.core.utilities.ProgressTracker;
 import net.corda.core.utilities.ProgressTracker.Step;
 import java.util.Date;
-import com.template.example.states.FundTrackingState;
-import com.template.example.contract.TemplateContract;
+import com.template.states.FundTrackingState;
+import com.template.contract.TemplateContract;
 import net.corda.core.contracts.Command;
 // ******************
 // * Initiator flow *
