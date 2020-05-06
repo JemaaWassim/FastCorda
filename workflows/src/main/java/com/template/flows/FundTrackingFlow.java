@@ -52,6 +52,7 @@ public class FundTrackingFlow extends FlowLogic<Void> {
 
         FundTrackingState trackingState = new FundTrackingState(getOurIdentity(),FundManager,date,dailyvalue);
         Command command = new Command<>(new TemplateContract.Commands.Action(), getOurIdentity().getOwningKey());
+        FundTrackingState outputState = new FundTrackingState(getOurIdentity(),FundManager,date,dailyvalue);
 
         // We create a transaction builder and add the components.
         TransactionBuilder txBuilder = new TransactionBuilder(notary)
