@@ -49,7 +49,7 @@ public class FundTrackingFlow extends FlowLogic<Void> {
         Party notary = getServiceHub().getNetworkMapCache().getNotaryIdentities().get(0);
         // We create the transaction components.
 
-        FundTrackingState trackingState = new FundTrackingState(getOurIdentity(),FundManager,date,dailyvalue)
+        FundTrackingState trackingState = new FundTrackingState(getOurIdentity(),FundManager,date,dailyvalue);
         Command command = new Command<>(new TemplateContract.Commands.Action(), getOurIdentity().getOwningKey());
 
         // We create a transaction builder and add the components.
