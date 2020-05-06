@@ -24,6 +24,8 @@ public class FundTrackingState implements ContractState {
     private final Party Company;
     private final Party FundManager;
     private final Date date;
+    private final double value;
+
 
     public FundTrackingState(Party company, Party fundManager, Date date, double value) {
         Company = company;
@@ -58,11 +60,7 @@ public class FundTrackingState implements ContractState {
         return value;
     }
 
-    private final double value;
 
-    public FundTrackingState() {
-
-    }
 
     @Override
     public List<AbstractParty> getParticipants() {
